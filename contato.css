@@ -1,0 +1,251 @@
+* {
+    box-sizing: border-box;
+    margin: 0%;
+}
+
+.montserrat-khand {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+header {
+    background-color: black;
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+header>h2 {
+    font-size: 12px;
+    font-family: "Montserrat", sans-serif;
+}
+
+#header2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    width: 100%;
+}
+
+#legendas {
+    display: flex;
+    flex-direction: row;
+    font-family: "Montserrat", sans-serif;
+    font-size: 10px;
+    gap: 20px;
+    text-decoration: none;
+    justify-content: center;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+section {
+    height: 20vh;
+    width: 70%;
+    display: flex;
+}
+
+#quem-somos {
+    text-align: left;
+    padding: 20px;
+    flex-shrink: 0;
+    margin-left: 60px;
+}
+
+
+footer {
+    background-color: black;
+    height: 50px;
+    width: 100%;
+    margin-top: auto;
+}
+
+#azul {
+    background-color: #DFF3F5;
+    border-radius: 30px;
+    width: 100%;
+    height: 40px;
+    border: solid 0px;
+    outline: none;
+    padding: 15px;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+    #azul1 {
+        background-color: #DFF3F5;
+        border-radius: 30px;
+        width: 100%;
+        height: 200px;
+        border: solid 0px;
+        outline: none;
+        padding: 15px;
+        font-size: 16px;
+    }
+
+    #a {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 80px;
+        width: 70%;
+        margin: 20px auto;
+        justify-content: flex-start;
+        flex: 1;
+    }
+
+    label {
+        font-family: "Montserrat", sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        color: #333;
+    }
+
+    #send {
+        border-radius: 20px;
+        background-color: black;
+        outline: none;
+        color: white;
+        border: solid 0px;
+        width: 200px;
+        height: 30px;
+        align-self: flex-end;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        width: 450px;
+        margin-left: 200px;
+    }
+
+
+@media (min-width: 1101px) {
+    section {
+        width: 70%;
+    }
+}
+
+@media (min-width: 550px) and (max-width: 1100px) {
+    section {
+        width: 85%;
+    }
+    
+    #header2 img {
+        width: 350px;
+    }
+    
+    #legendas {
+        gap: 15px;
+        font-size: 9px;
+    }
+}
+
+@media (max-width: 549px) {
+    header h2 {
+        font-size: 9px;
+        padding: 0 5px;
+    }
+    
+    section {
+        width: 95%;
+    }
+    
+    #header2 {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+    
+    #header2 img {
+        width: 200px;
+    }
+    
+    #legendas {
+        gap: 5px;
+        font-size: 7px;
+        white-space: nowrap;
+        flex-shrink: 0;
+    }
+    
+    #a {
+        flex-direction: column;
+        width: 95%;
+        gap: 20px;
+    }
+    
+    form {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+@media (max-width: 768px) {
+    section {
+        width: 90%;
+    }
+    
+    #header2 {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    #header2 img {
+        width: 300px !important;
+    }
+    
+
+    #header2 > div:last-child {
+        gap: 15px !important;
+    }
+    
+    #header2 > div:last-child img {
+        width: 24px !important;
+        height: 24px !important;
+    }
+    
+    #legendas {
+        gap: 15px;
+        font-size: 14px;
+    }
+    
+    #legendas a {
+        padding: 10px 12px;
+        background: #f0f0f0;
+        border-radius: 5px;
+        margin: 2px;
+    }
+    
+    #a {
+        flex-direction: column;
+        width: 95%;
+        gap: 20px;
+    }
+    
+    form {
+        width: 100%;
+        margin-left: 0;
+    }
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finalizar Pedido - Site Salvatore</title>
+    <link rel="stylesheet" href="checkout.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Khand:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div id="icons"></div>
+        <h2>FRETE GRÁTIS ACIMA DE R$ 99 PARA MG / R$ 119 PARA RJ / R$ 129 PARA SP / R$ 149 PARA OUTROS ESTADOS</h2>
+    </header>
+
+    <section>
+        <div id="header2">
+            <img src="logo.png" alt="" width="400px">
+            <div id="legendas">
+                <a href="index.html">HOME</a>
+                <a href="#">PROMOÇÔES</a>
+                <a href="#">TORTAS</a>
+                <a href="#">BOLOS</a>
+                <a href="#">DOCES</a>
+                <a href="contato.html">CONTATO</a>
+                <a href="quemsomos.html">QUEM SOMOS?</a>
+            </div>
+            <div style="display: flex; gap: 10px; align-items: center;">
+                <a href="pesquisa.html"><img src="lupa.png" alt="Buscar" width="20px" style="cursor: pointer;"></a>
+                <a href="cadastro.html"><img src="user.png" alt="Usuário" width="20px" style="cursor: pointer;"></a>
+                <a href="pedidos.html"><img src="bag.png" alt="Pedidos" width="20px" style="cursor: pointer;"></a>
+            </div>
+        </div>
+    </section>
+
+    <div class="progress-bar">
+        <div class="step active">
+            <div class="step-icon">🛒</div>
+            <span>Carrinho</span>
+        </div>
+        <div class="step">
+            <div class="step-icon">🚚</div>
+            <span>Entrega</span>
+        </div>
+        <div class="step">
+            <div class="step-icon">💳</div>
+            <span>Pagamento</span>
+        </div>
+    </div>
+
+    <div id="checkout-container">
+        <div class="checkout-form">
+            <h2>Dados de Contato</h2>
+            <form>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+                </div>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="newsletter" name="newsletter">
+                    <label for="newsletter">Receber ofertas e novidades por email</label>
+                </div>
+            <h2>Entrega</h2>
+                <div class="form-group">
+                    <label for="cep">CEP</label>
+                    <input type="text" id="cep" name="cep" placeholder="00000-000" required>
+                </div>
+                <div class="continue-section">
+                    <button class="continue-btn">Continuar</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="order-summary">
+            <div class="product-card">
+                <img src="doce1.jpg" alt="Macarons">
+                <div class="product-info">
+                    <h3>Macarons - 6 unidades</h3>
+                    <p class="price">R$ 23,90</p>
+                    <p class="quantity">Quantidade: 1</p>
+                </div>
+            </div>
+            
+            <div class="total-section">
+                <div class="total-line">
+                    <span>Subtotal:</span>
+                    <span>R$ 23,90</span>
+                </div>
+
+                <div class="total-line final">
+                    <span><strong>Total:</strong></span>
+                    <span><strong>R$ 23,90</strong></span>
+                </div>
+            </div>
+            
+            <div class="coupon-section">
+                <button class="coupon-btn">Aplicar Cupom de Desconto</button>
+            </div>
+        </div>
+    </div>
+
+    <footer></footer>
+
+</body>
+
+</html>

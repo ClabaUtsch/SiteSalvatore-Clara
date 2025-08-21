@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+    margin: 0%;
+}
+
+.montserrat-khand {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+header {
+    background-color: black;
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+header>h2 {
+    font-size: 12px;
+    font-family: "Montserrat", sans-serif;
+}
+
+#header2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    width: 100%;
+}
+
+#legendas {
+    display: flex;
+    flex-direction: row;
+    font-family: "Montserrat", sans-serif;
+    font-size: 10px;
+    gap: 20px;
+    text-decoration: none;
+    justify-content: center;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+section {
+    height: 20vh;
+    width: 70%;
+    display: flex;
+}
+
+#quem-somos {
+    width: 70%;
+    text-align: center;
+    margin: 20px auto;
+    padding: 40px;
+}
+
+#quem-somos>h1 {
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: black;
+    height: 50px;
+    width: 100%;
+    margin-top: auto;
+}
+
+#azul {
+    background-color: #DFF3F5;
+    border-radius: 30px;
+    width: 800px;
+    height: 450px;
+    margin: 0 auto;
+    padding: 5%;
+    font-size: 18px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+
+@media (max-width: 768px) {
+    section {
+        width: 90%;
+    }
+    
+    #quem-somos {
+        width: 90%;
+    }
+    
+    #header2 {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    #header2 img {
+        width: 300px !important;
+    }
+    
+
+    #header2 > div:last-child {
+        gap: 15px !important;
+    }
+    
+    #header2 > div:last-child img {
+        width: 24px !important;
+        height: 24px !important;
+    }
+    
+    #legendas {
+        gap: 15px;
+        font-size: 14px;
+    }
+    
+    #legendas a {
+        padding: 10px 12px;
+        background: #f0f0f0;
+        border-radius: 5px;
+        margin: 2px;
+    }
+    
+    #azul {
+        width: 95%;
+        font-size: 16px;
+    }
+}
